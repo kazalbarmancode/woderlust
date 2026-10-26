@@ -10,6 +10,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 ## Project Overview
 
+- **Project**: `woderlust` (Next.js starter with shadcn/ui pre-installed)
 - **Framework**: Next.js 16.4.3 (App Router) with React 19.3.0
 - **Styling**: Tailwind CSS v4 via `@tailwindcss/turbopack` + `tw-animate-css`
 - **UI Library**: shadcn/ui (base-nova style) with `@base-ui/react` and `@shadcn/react`
@@ -46,6 +47,7 @@ No test suite configured. No typecheck script — rely on `npm run build` for ty
 - **Fonts**: Geist Sans + Geist Mono via `next/font/google` (CSS variables)
 - **Dark mode**: Class-based (`.dark` on `<html>`), not media query
 - **CSS**: Tailwind v4 syntax (`@import "tailwindcss"`, `@theme inline`, `@custom-variant`)
+- **Empty page** — `src/app/page.tsx` is a blank starter; real content goes in `src/app/`
 
 ## shadcn/ui Specifics
 
@@ -53,7 +55,7 @@ No test suite configured. No typecheck script — rely on `npm run build` for ty
 - Style: `base-nova` (not default/new-york)
 - CSS variables enabled (`cssVariables: true`)
 - Icon library: `lucide-react`
-- Utils: `cn` from `cn` package (re-exported from `@/lib/utils`)
+- Utils: `cn` imported from `@/lib/utils` (re-exports `cn` package)
 
 ## Experimental Features Enabled
 
